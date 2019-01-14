@@ -1,0 +1,10 @@
+<servlet>
+        <servlet-name>PdfServlet</servlet-name>
+        <servlet-class>net.sf.jasperreports.j2ee.servlets.PdfServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>PdfServlet</servlet-name>
+    <url-pattern>/servlets/report/PDF</url-pattern>
+</servlet-mapping>
+
+creer le repertoire 'resources/report'

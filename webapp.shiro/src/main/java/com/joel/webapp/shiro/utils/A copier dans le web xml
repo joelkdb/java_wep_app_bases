@@ -1,0 +1,31 @@
+<!--Pour la configuration de apache shiro-->
+<listener>
+        <listener-class>org.apache.shiro.web.env.EnvironmentLoaderListener</listener-class>
+    </listener>
+    <filter>
+        <filter-name>shiroFilter</filter-name>
+        <filter-class>org.apache.shiro.web.servlet.ShiroFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>shiroFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+        <dispatcher>FORWARD</dispatcher>
+        <dispatcher>INCLUDE</dispatcher>
+        <dispatcher>ERROR</dispatcher>
+    </filter-mapping>
+
+
+
+<!--Pour la configuration du filter de securité-->
+    <filter>
+        <filter-name>JoelSecuriteFilter</filter-name>
+        <filter-class>com.joel.webapp.filters.JoelSecuriteFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>JoelSecuriteFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+
+<!--copier aussi le "shiro.ini" qui se trouve dans le package, dans le WEB-INF-->

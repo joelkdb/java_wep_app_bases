@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.joel</groupId>
+    <artifactId>web.Joel.base</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>webapp.core</module>
+        <module>webapp.securite</module>
+        <module>webapp.web</module>
+        <module>webapp.shiro</module>
+        <module>webapp.report</module>
+        <module>webapp.journal</module>
+        <module>webapp.journal.utils</module>
+        <module>webapp.sms</module>
+        <module>webapp.webserviceRestful</module>
+        <module>webapp.mail</module>
+        <module>webapp.excel</module>
+        <module>webapp.databaseTools</module>
+    </modules>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <name>web.Joel.base</name>
+</project>
